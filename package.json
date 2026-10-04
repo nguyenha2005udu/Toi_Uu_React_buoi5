@@ -1,0 +1,29 @@
+{
+  "name": "student-performance-optimization",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:before": "vite --mode before",
+    "dev:after": "vite --mode after",
+    "build:before": "tsc -b && vite build --mode before",
+    "build:after": "tsc -b && vite build --mode after",
+    "preview": "vite preview",
+    "preview:before": "vite preview --host 0.0.0.0",
+    "preview:after": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-window": "1.8.10"
+  },
+  "devDependencies": {
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "@types/react-window": "1.8.8",
+    "@vitejs/plugin-react": "4.3.3",
+    "typescript": "5.6.3",
+    "vite": "5.4.14"
+  }
+}
